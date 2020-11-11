@@ -1,0 +1,20 @@
+ <b class = "top_button"><%= link_to "Top", topics_index_path %></b>
+<h1 class="topic_name"><%= @topic.title %></h1>
+<% @posts.each_with_index do |post| %>
+  <div class="comment">
+    <%= post.id %>. <%= post.name %> : <%= post.body %>
+    <%= link_to '[削除]', post_delete_path(post), method: :delete, data: {confirm: "削除してもよろしいですか？"} %>
+  </div>
+<% end %>
+
+<div class = "new_comments">
+<h3 class="new_comment">新規書き込み</h3>
+    <%= form_for @newpost, :url => post_create_path do |form| %>
+      <b class="font">お名前</b>
+      <p><%= form.text_field :name %></p>
+      <b class="font">コメント</b>
+      <p class="text_area"><%= form.text_area :body %></p>
+      <%= form.hidden_field :topic_id %>
+      <%= form.submit "コメントする" %>
+    <% end %>
+</div>

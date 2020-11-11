@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+  background-color:pink;
+}
+
+footer,
+header {
+  display: block;
+  background-color:palevioletred; 
+}
+
+  header {
+    border:double plum 15px;
+    height:100px;
+  }
+
+  .headertitle {
+    color:yellow;
+    font-size:50px;
+    text-align: center;
+  }
+
+  
+  .footertitle {
+    color:yellow;
+    font-size:20px;
+    text-align: center;
+  }

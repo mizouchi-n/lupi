@@ -1,0 +1,59 @@
+.topic_top,
+.topic_bottom
+ {
+  display: block;
+  font-size:20px;
+}
+
+.topic_name {
+    font-size:35px;
+    color:purple;
+    text-align:center;
+}
+
+.comment {
+    font-size:20px;
+    color:black;
+    text-align:left;
+}
+
+.new_comments {
+    margin:0 0 0 auto;
+    display: block;
+    width:30%;
+    border: double 5px palevioletred;
+    text-align: center;
+}
+
+.new_comment {
+    font-size:40px;
+    color:palevioletred;
+    text-align:center;
+}
+
+.font {
+    font-size:25px;
+    color:palevioletred;
+}
+
+form input,
+form textarea {
+  width: 50%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 3px solid palevioletred;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+form input[type="submit"] {
+  background-color:palevioletred;
+  border-radius: 20px;
+  color: white;
+  border: 0;
+  font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+  background-color:plum;
+}
