@@ -1,0 +1,18 @@
+<div class= "topic_top">
+  <div class = "topic_title" ><h1>トピック一覧</h1></div>
+    <% @topics.each do |topic| %>
+    <div class = "topic_list"><%= link_to topic.title, topics_show_path(topic.id) %></div>
+    <div class = "topic_delete"><%= link_to '[削除]', topic_delete_path(topic.id), method: :delete, data: {confirm: "削除してもよろしいですか？"} %></div>
+    <% end %>
+     </div> 
+</div> 
+<div class="topic_bottom">
+  <div class = "topic_title" ><h1>トピック新規投稿</h1></div>
+    <div class= "new_topic">
+    <%= form_for @newTopic, :url => {:action => 'create'} do |form| %>
+    <b>トピックのタイトル</b>
+    <br><%= form.text_field :title %>
+    <%= form.submit "新規投稿"%>
+    <% end %>
+    </div>
+</div>
