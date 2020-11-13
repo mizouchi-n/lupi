@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  root 'topics#index'
+  devise_for :users
+
+  resources :users, only: [:index, :show]
+  get 'users/index'
+  get 'users/show'
+  
 
   get 'topics/index'
   get 'topics/show/:id' => 'topics#show', as: :topics_show
@@ -8,4 +13,7 @@ Rails.application.routes.draw do
 
   post 'posts/create' => 'posts#create', as: :post_create
   delete 'posts/delete/:id' => 'posts#delete', as: :post_delete
+end
+
+root 'topics#index'
 end
