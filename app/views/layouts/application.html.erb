@@ -12,13 +12,6 @@
    <body>
     <header class="header">
       <h1 class="headertitle">Lupi</h1>
-      <% if user_signed_in? %>
-        <%= link_to "ログアウト", destroy_user_session_path, :method => :delete %>
-        <%= link_to "マイページへ", user_path(current_user.id) %>
-      <% else %>
-        <%= link_to "ユーザー登録", new_user_registration_path %>
-        <%= link_to "ログイン", new_user_session_path %>
-      <% end %>
     </header>
     <%= yield %>
    <footer>

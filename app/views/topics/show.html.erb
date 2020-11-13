@@ -1,7 +1,4 @@
  <b class = "top_button"><%= link_to "Top", topics_index_path %></b>
-<%= @topic.user.email %>
-<%= @topic.content %>
-
 <h1 class="topic_name"><%= @topic.title %></h1>
 <% @posts.each_with_index do |post| %>
   <div class="comment">
