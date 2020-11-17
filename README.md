@@ -22,7 +22,7 @@ belongs_to :topic
   * アプリケーション名:lupi
   * 由来：ルピナス（Lupinus)という花の名前から。
 
-# URL:
+# URL: https://lupi-30439.herokuapp.com/topics/index
 
 # 利用方法
 
