@@ -49,10 +49,6 @@ belongs_to :topic
 
   * コメント削除機能：https://gyazo.com/25bcdf158ca6d004f40e25e8fccd03f3
 
-# 今後実装を考えている機能
-
-  * 写真投稿機能
-  * 「いいね」ボタン機能
 
 
 
